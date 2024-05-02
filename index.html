@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="homepage.css" />
+
+    <link rel="stylesheet" href="navbar.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Send+Flowers&display=swap"
+      rel="stylesheet"
+    />
+    <!-- <link href="cards.css" rel="stylesheet" /> -->
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navbar-left">
+        <a class="navbar-brand" href="index.html">Final Project</a>
+      </div>
+      <div class="navbar-right">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="trackOrder.html">Track Order</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="login.html"
+              ><span class="material-symbols-outlined"> person </span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="deliveryInformation.html"
+              ><span class="material-symbols-outlined">
+                shopping_basket
+              </span></a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div id="container">
+      <div id="ad">
+        <div id="left">
+          <h2>Send Her Blooms</h2>
+          <hr />
+          <p>She will Love it All! Order Flowers Now!</p>
+        </div>
+        <div id="right">
+          <img src="decorativeImg/pinkFlowers.jpg" alt="" />
+        </div>
+      </div>
+
+      <div id="filters">
+        <div id="leftSide">
+          <label for="flowerType">Filters:</label>
+          <select name="flowerType" id="flowerType">
+            <option value="" disabled selected>FlowerType</option>
+            <option value="roses">Roses</option>
+            <option value="tulips">Tulips</option>
+            <option value="mixed">Mixed</option>
+            <option value="lillies">Lilies</option>
+            <option value="tulips">Tulips</option>
+          </select>
+
+          <select name="occasion" id="occasion">
+            <option value="" disabled selected>Occasion</option>
+            <option value="mothersDay">Mother's Day</option>
+            <option value="birthday">Birthday</option>
+            <option value="thankYou">Thank You</option>
+          </select>
+
+          <select name="colors" id="colors">
+            <option value="" disabled selected>Colors</option>
+            <option value="mixed">Mixed</option>
+            <option value="red">Red</option>
+            <option value="yellow">Yellow</option>
+            <option value="green">Green</option>
+            <option value="orange">Orange</option>
+          </select>
+        </div>
+        <div id="rightSide">
+          <select name="price" id="price">
+            <option value="low">Price: Low To High</option>
+            <option value="high">Price: High To Low</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <br />
+    <br />
+    <div id="flowers" class="cards"></div>
+
+    <script src="configuration.js"></script>
+    <script src="homepage.js"></script>
+  </body>
+</html>
