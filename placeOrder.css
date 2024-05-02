@@ -1,0 +1,9 @@
+#order{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    border: 1px solid black;
+    background-color: lightcyan;
+    margin: 2rem;
+}

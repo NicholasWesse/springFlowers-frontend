@@ -1,6 +1,15 @@
 let d = document.getElementById("placeOrder");
 let host = getHost();
 
+setName();
+
+
+async function setName(){
+    let flower = await getFlower();
+
+    let name = document.getElementById("flowerName");
+    name.innerHTML = `<h1>${flower.description}</h1>`;
+}
 
 
 async function getFlower(){

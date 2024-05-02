@@ -1,3 +1,5 @@
+
+
 loggedIn();
 
 
@@ -17,7 +19,8 @@ function redirectSign(){
 }
 
 
-function saveInformation(){
+function saveInformation(event){
+    event.preventDefault();
     let first = document.getElementById("firstName").value
     let last = document.getElementById("lastName").value
     let relate = document.getElementById("relationship").value
