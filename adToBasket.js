@@ -51,10 +51,16 @@ async function submit() {
 
         let id = result.id;
 
+
         saveInfo(id,da.value,cost);
+        localStorage.setItem("total", 1)
+
+    
 
         
-        window.location.href = "index.html";
+        window.location.href = "deliveryInformation.html";
+
+
 
 
 }

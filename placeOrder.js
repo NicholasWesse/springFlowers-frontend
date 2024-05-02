@@ -73,7 +73,7 @@ async function sendOrder(){
       };
       let response = await fetch(host + "/orders",request);
 
-
+      localStorage.setItem("total", 0);
 
     window.location.href = "index.html"
 }

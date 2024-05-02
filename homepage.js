@@ -4,7 +4,9 @@ let flowers = [];
 displayFlowers();
 
 
-
+if(localStorage.getItem("ordersAll") == null){
+  localStorage.setItem("ordersAll", []);
+}
 
 
 
@@ -25,6 +27,7 @@ async function getFlowers() {
         }
 
         let result = await response.json();
+        
         return result;
     } catch (error) {
         console.error("Error fetching flowers:", error);
@@ -62,6 +65,7 @@ async function getFlowers() {
         if (flowers.length == 0) {
           flowers = await getFlowers();
         }
+        
 
         let list = document.getElementById("flowers");
         list.innerHTML = "";

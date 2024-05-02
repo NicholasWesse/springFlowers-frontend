@@ -3,8 +3,23 @@ const mode = 1;
 const host_local = "http://localhost:8080";
 const host_remote = "https://final-n1yk.onrender.com";
 
+if(localStorage.getItem("total") == null){
+    localStorage.setItem("total",0);
+}
+let shoppingBasketIcon = document.querySelector(".hit");
+
+
+shoppingBasketIcon.innerHTML = ` ${localStorage.getItem('total')}`;
+
+// holdde.innerHTML = ` <a class="nav-link" href="deliveryInformation.html"
+// ><span class="material-symbols-outlined">
+// shopping_basket ${localStorage.getItem('total')}</span></a> `
+
+
+console.log(localStorage.getItem("total"))
+
 function getHost() {
-    return (mode == 0) ? host_local : host_remote;
+    return "https://final-n1yk.onrender.com"
 }
 
 function isLoggedIn() {
